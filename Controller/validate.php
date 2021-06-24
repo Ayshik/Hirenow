@@ -1,10 +1,11 @@
 <?php
-  $name="afsana002";
-   $password="afsana12";
-if (isset($_POST['submit'])) {
+  $name="user123";
+   $password="321";
 
-	$getname=$_POST['name'];
-	$getpassword=$_POST['password'];
+if (isset($_POST['login'])) {
+
+	$getname=$_POST['uname'];
+	$getpassword=$_POST['psw'];
 	if ($getname==$name and $getpassword==$password) {
 		if (isset($_POST['rm'])) {
 			setcookie('name',$getname,time()+60*60*7 );
@@ -12,16 +13,14 @@ if (isset($_POST['submit'])) {
 		}
 			session_start();
 			$_SESSION['name']=$getname;
-			header("location: ../View/Receptionist.php");
+			header("location:../View/welcome.php");
 
-		
+
 	}else{
 		echo "Username or Password is Invalid.<br> click here to
-		<a href='../index.php'> try again </a> ";
+		<a href='../View/login.php'> try again </a> ";
 
 	}
-}else{
-	header("location: ../index.php");
 }
 
   ?>

@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   {
     $psw=$_POST['psw'];
   }
- 
+
 
 
 }
@@ -53,15 +53,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
- <link rel="stylesheet" href="login.css" />
+
   </head>
 
   <body>
-    <form class="box" action="" method="post">
+    <form class="box" action="../Controller/validate.php" method="post">
   <table align = "center">
 
     <h1 align = "center">Login</h1>
-      
+
 
       <!--php validation error dekhanor jonno-->
 
@@ -72,10 +72,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
 <tr>
       <td><input type="password" placeholder="Enter Password" name="psw" ></td>
-                <td><span><?php echo $err_psw;?></span></td>  
+                <td><span><?php echo $err_psw;?></span></td>
 </tr>
      <tr>
-        
+
         <td><input type="submit" name="login" value="Login" /></td>
 </tr>
 
