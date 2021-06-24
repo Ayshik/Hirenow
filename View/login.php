@@ -1,16 +1,26 @@
 <?php
-session_start();
+
+
+
+
+
 $uname="";
 $err_uname="";
 $psw="";
 $err_psw="";
 $err_invalid="";
 $has_error=false;
+
+
 if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+
   if(empty($_POST['uname']))
   {
     $err_uname="*Username Required";
     $has_error=true;
+
+
   }
   else
   {
@@ -20,12 +30,23 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   {
     $err_psw="*Password Required";
     $has_error=true;
+
+
   }
   else
   {
     $psw=$_POST['psw'];
   }
+ 
+
+
+}
 ?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
