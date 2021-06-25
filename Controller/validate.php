@@ -13,7 +13,7 @@ if (isset($_POST['login'])) {
 		}
 			session_start();
 			$_SESSION['name']=$getname;
-			header("location:../View/welcome.php");
+			header("location:../View/userpanel.php");
 
 
 	}else{
