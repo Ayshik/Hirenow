@@ -24,18 +24,23 @@ session_start();
 
 <header>
   <h2 style="color:red">User Name~<?php echo $_SESSION["name"];?></h2>
-  
+
 </header>
 
 <section>
   <nav>
     <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
+      <li><a href="catagory.php">Our Services</a></li>
+      <li><a href="#">Pending Services</a></li>
+      <li><a href="#">Ongoing Services</a></li>
+      <li><a href="#">Report</a></li>
+      <li><a href="#">History</a></li>
+        <li><a href="#">My Profile</a></li>
+
+
     </ul>
   </nav>
-  
+
 
 </section>
 
