@@ -98,13 +98,13 @@
     <h1 class="w3-xxxlarge w3-text-red"><b>Cleaning</b></h1>
     <div class="w3-half">
       <img src="https://2rdnmg1qbg403gumla1v9i2h-wpengine.netdna-ssl.com/wp-content/uploads/sites/3/2018/11/cleanSick-628306310_770x533-650x428.jpg" style="width:100%"  alt="Concrete meets bricks">
-<p>Ac Servicing~1000 TK</p>
+<p>Residential Cleaning~2000 TK</p>
 
-      <img src="https://hometriangle.com/imagecache/media/6725/htr-image-6725.jpg?size=900x600-3" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-<p>Cooling Problem ~700 TK</p>
+      <img src="https://propridecleaning.com/wp-content/uploads/2019/12/Multiple-Services-Pic.jpg?size=900x600-3" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+<p>Commercial Cleaning ~3500 TK</p>
 
-      <img src="https://sulcdn.azureedge.net/content/images/listings/listseo/commercial-ac-service.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-<p>AC Installation, Uninstallation~500 TK</p>
+      <img src="https://shinycarpetcleaning.com/wp-content/uploads/2020/10/Commercial-Carpet-Cleaning-Services-Rates-This-2020.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+<p>Carpet Cleaning~500 TK</p>
     </div>
   </div>
 
