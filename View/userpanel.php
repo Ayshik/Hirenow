@@ -31,11 +31,11 @@ session_start();
   <nav>
     <ul>
       <li><a href="catagory.php">Our Services</a></li>
-      <li><a href="#">Pending Services</a></li>
-      <li><a href="#">Ongoing Services</a></li>
-      <li><a href="#">Report</a></li>
-      <li><a href="#">History</a></li>
-        <li><a href="#">My Profile</a></li>
+      <li><a href="pendingservices.php">Pending Services</a></li>
+      <li><a href="ongoingservices.php">Ongoing Services</a></li>
+      <li><a href="report.php">Report</a></li>
+      <li><a href="history.php">History</a></li>
+        <li><a href="Myprofile.php">My Profile</a></li>
 
 
     </ul>
