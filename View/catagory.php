@@ -97,7 +97,7 @@
 
     <h1 class="w3-xxxlarge w3-text-red"><b>Cleaning</b></h1>
     <div class="w3-half">
-      <img src="https://i0.wp.com/chiquehomeliving.com/wp-content/uploads/2021/04/3-1.jpeg?fit=1024%2C683&ssl=1" style="width:100%"  alt="Concrete meets bricks">
+      <img src="https://2rdnmg1qbg403gumla1v9i2h-wpengine.netdna-ssl.com/wp-content/uploads/sites/3/2018/11/cleanSick-628306310_770x533-650x428.jpg" style="width:100%"  alt="Concrete meets bricks">
 <p>Ac Servicing~1000 TK</p>
 
       <img src="https://hometriangle.com/imagecache/media/6725/htr-image-6725.jpg?size=900x600-3" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
