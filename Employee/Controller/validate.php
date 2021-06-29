@@ -13,12 +13,12 @@ if (isset($_POST['login'])) {
 		}
 			session_start();
 			$_SESSION['name']=$getname;
-			header("location:../View/userpanel.php");
+			header("location:userpanel.php");
 
 
 	}else{
 		echo "Username or Password is Invalid.<br> click here to
-		<a href='../View/login.php'> try again </a> ";
+		<a href='login.php'> try again </a> ";
 
 	}
 }

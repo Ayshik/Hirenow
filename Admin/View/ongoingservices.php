@@ -1,3 +1,19 @@
+
+
+<?php
+
+include('header/header.php');
+
+
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <title>W3.CSS</title>
@@ -6,7 +22,7 @@
 <body>
 
 <div class="w3-container">
-<center>  <h2>pending Request</h2>
+<center>  <h2>Active Services</h2>
 
   <table class="w3-table-all w3-centered">
     <tr>
@@ -17,6 +33,7 @@
 				 <th>Address</th>
 				  <th>Date & Time</th>
 					 <th>Payment</th>
+					  <th>Working Status</th>
     </tr>
     <tr>
       <td>Maria</td>
@@ -25,19 +42,9 @@
 			  <td>Ac Servicing~1000 TK</td>
 				 <td>Gulshan 1 ,56 ka,Dhaka</td>
 				  <td>27-6-2021,10.00 Am</td>
-					 <td>None</td>
+					 <td>Done</td>
+					  <td>Going on</td>
     </tr>
-
-		<tr>
-      <td>Maria</td>
-      <td>Maria123</td>
-      <td>Ac Repair</td>
-			  <td>Ac Servicing~1000 TK</td>
-				 <td>Gulshan 1 ,56 ka,Dhaka</td>
-				  <td>27-6-2021,10.00 Am</td>
-					 <td>None</td>
-    </tr>
-
 		<tr>
 			<td>Maria</td>
 			<td>Maria123</td>
@@ -45,9 +52,9 @@
 				<td>Ac Servicing~1000 TK</td>
 				 <td>Gulshan 1 ,56 ka,Dhaka</td>
 					<td>27-6-2021,10.00 Am</td>
-					 <td>None</td>
+					 <td>Done</td>
+						<td>Going on</td>
 		</tr>
-
 		<tr>
 			<td>Maria</td>
 			<td>Maria123</td>
@@ -55,9 +62,9 @@
 				<td>Ac Servicing~1000 TK</td>
 				 <td>Gulshan 1 ,56 ka,Dhaka</td>
 					<td>27-6-2021,10.00 Am</td>
-					 <td>None</td>
+					 <td>Done</td>
+						<td>Going on</td>
 		</tr>
-
 		<tr>
 			<td>Maria</td>
 			<td>Maria123</td>
@@ -65,9 +72,9 @@
 				<td>Ac Servicing~1000 TK</td>
 				 <td>Gulshan 1 ,56 ka,Dhaka</td>
 					<td>27-6-2021,10.00 Am</td>
-					 <td>None</td>
+					 <td>Done</td>
+						<td>Going on</td>
 		</tr>
-
 		<tr>
 			<td>Maria</td>
 			<td>Maria123</td>
@@ -75,9 +82,9 @@
 				<td>Ac Servicing~1000 TK</td>
 				 <td>Gulshan 1 ,56 ka,Dhaka</td>
 					<td>27-6-2021,10.00 Am</td>
-					 <td>None</td>
+					 <td>Done</td>
+						<td>Going on</td>
 		</tr>
-
 		<tr>
 			<td>Maria</td>
 			<td>Maria123</td>
@@ -85,20 +92,16 @@
 				<td>Ac Servicing~1000 TK</td>
 				 <td>Gulshan 1 ,56 ka,Dhaka</td>
 					<td>27-6-2021,10.00 Am</td>
-					 <td>None</td>
+					 <td>Done</td>
+						<td>Going on</td>
 		</tr>
 
-		<tr>
-			<td>Maria</td>
-			<td>Maria123</td>
-			<td>Ac Repair</td>
-				<td>Ac Servicing~1000 TK</td>
-				 <td>Gulshan 1 ,56 ka,Dhaka</td>
-					<td>27-6-2021,10.00 Am</td>
-					 <td>None</td>
-		</tr>
   </table>
 </div>
+<?php
 
-</body>
-</html>
+include('footer/footer.php');
+
+
+
+?>

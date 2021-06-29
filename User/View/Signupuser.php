@@ -73,9 +73,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     }
 
 
-    if(file_exists('info2.json'))
+    if(file_exists('../Controller/info.json'))
               {
-                   $current_data = file_get_contents('info2.json');
+                   $current_data = file_get_contents('../Controller/info.json');
                    $array_data = json_decode($current_data, true);
                    $extra = array(
                          'username' =>     $_POST['uname'],
@@ -88,9 +88,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                    );
                    $array_data[] = $extra;
                    $final_data = json_encode($array_data);
-                   if(file_put_contents('info2.json', $final_data))
+                   if(file_put_contents('../Controller/info.json', $final_data))
                    {
-                       echo '<script>alert("Data Added in info2.json file")</script>';
+                       echo '<script>alert("Data Added in info.json file")</script>';
                    }
               }
               else

@@ -2,7 +2,7 @@
  
 function isLoggedIn()
 {
-  if (isset($_SESSION['loggedinuser'])) {
+  if (isset($_SESSION['name'])) {
     return true;
   }else{
     return false;

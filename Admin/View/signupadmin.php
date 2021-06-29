@@ -1,5 +1,5 @@
 <?php
-
+include('header/header.php');
 $name=$email=$uname=$pass=$conf_pass=$phone=$nid=$address="";
 $name_err=$email_err=$pass_err=$uname_err=$nid_err=$phn_err=$add_err=$conf_pass_err=$geder_err="";
 $flag = 1;
@@ -71,11 +71,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
       $pass_err="PASSWORD AND CONFIRM PASSWORD DOES NOT MATCH";
       $flag = 0;
     }
-
-
-    if(file_exists('../Controller/info2.json'))
+  
+else{
+    if(file_exists('../Controller/admin.json'))
               {
-                   $current_data = file_get_contents('../Controller/info2.json');
+                   $current_data = file_get_contents('../Controller/admin.json');
                    $array_data = json_decode($current_data, true);
                    $extra = array(
                          'username' =>     $_POST['uname'],
@@ -84,13 +84,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                          'password' =>     $_POST['pass'],
                          'Address' =>     $_POST['address'],
                          'phone'    =>     $_POST["phone"],
-                          'nid'     =>     $_POST["nid"]
+                         
                    );
                    $array_data[] = $extra;
                    $final_data = json_encode($array_data);
-                   if(file_put_contents('../Controller/info2.json', $final_data))
+                   if(file_put_contents('../Controller/admin.json', $final_data))
                    {
-                       echo '<script>alert("Data Added in info2.json file")</script>';
+                       echo '<script>alert("Data Added in admin.json file")</script>';
                    }
               }
               else
@@ -101,21 +101,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
 
 }
-
+}
 
 
 
 ?>
 
-<!DOCTYPE html>
-<html>
+
 <head>
-  <title>Registration For User</title>
+  <title>Registration For Admin</title>
 
 <body>
 <center><form class="box" method="post" action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" name="registration">
 
-      <h1>Registration For User</h1>
+      <h1>Registration For Admin</h1>
 
 
           <input type="text" name="name" placeholder='NAME' value="<?php echo $name;?>"></td>
@@ -153,10 +152,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
               <td id="conf_pass_err"><?php echo  $conf_pass_err;?></td><br>
 
 
-         <input type="text" name="nid" placeholder='NATIONAL ID NUMBER' value="<?php echo $nid;?>"></td>
-
-
-         <td id="nid_err"><?php echo  $nid_err;?></td><br>
+       
 
 
 
@@ -171,8 +167,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
            <input type="text" placeholder='ADDRESS' name="address" value="<?php echo $address;?>" ></td>
 
 
-         <td id="add_err"><?php echo  $add_err;?></td><br><br>
+         <td id="add_err"><?php echo  $add_err;?></td><br>
 
+
+        
 
 
        <input type="submit" name="submit" value="REGISTER" id='btn'></td>
@@ -183,7 +181,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
 
    </form></center>
+<?php
 
-</body>
+include('footer/footer.php');
 
-</html>
+
+
+?>

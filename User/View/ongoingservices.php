@@ -1,3 +1,19 @@
+
+
+<?php
+
+include('header/header.php');
+
+
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <title>W3.CSS</title>
@@ -82,6 +98,10 @@
 
   </table>
 </div>
+<?php
 
-</body>
-</html>
+include('footer/footer.php');
+
+
+
+?>

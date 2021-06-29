@@ -79,9 +79,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
       $wsec=$_POST['wsec'];
     }
 
-    if(file_exists('../Controller/info.json'))
+    if(file_exists('../Controller/info2.json'))
               {
-                   $current_data = file_get_contents('../Controller/info.json');
+                   $current_data = file_get_contents('../Controller/info2.json');
                    $array_data = json_decode($current_data, true);
                    $extra = array(
                          'username' =>     $_POST['uname'],
@@ -96,9 +96,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                    );
                    $array_data[] = $extra;
                    $final_data = json_encode($array_data);
-                   if(file_put_contents('../Controller/info.json', $final_data))
+                   if(file_put_contents('../Controller/info2.json', $final_data))
                    {
-                       echo '<script>alert("Data Added in info.json file")</script>';
+                       echo '<script>alert("Data Added in info2.json file")</script>';
                    }
               }
               else
@@ -118,12 +118,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registration For User</title>
+  <title>Registration For Employee</title>
 
 <body>
 <center><form class="box" method="post" action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" name="registration">
 
-      <h1>Registration For User</h1>
+      <h1>Registration For Employee</h1>
 
 
           <input type="text" name="name" placeholder='NAME' value="<?php echo $name;?>"></td>
